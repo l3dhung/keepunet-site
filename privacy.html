@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư – KeepUNet</title>
+<meta name="description" content="Chính sách quyền riêng tư của KeepUNet (tiếng Việt và tiếng Anh).">
+<link rel="icon" href="shield.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="brand" href="./"><img src="shield.svg" width="32" height="32" alt="">KeepUNet</a>
+    <nav><a href="#vi">Tiếng Việt</a><a href="#en">English</a></nav>
+  </div>
+</header>
+<main>
+
+<article id="vi" lang="vi">
+  <h1>Chính sách quyền riêng tư</h1>
+  <p class="meta">Áp dụng cho phần mềm KeepUNet trên Windows. Có hiệu lực từ ngày 01/11/2026.</p>
+
+  <p>KeepUNet là phần mềm lọc Internet cho gia đình, trường học và doanh nghiệp nhỏ, do <strong>Lê Hùng</strong> (Việt Nam) phát triển và phát hành ("chúng tôi"). Chính sách này giải thích KeepUNet xử lý những dữ liệu nào, ở đâu, và quyền của bạn, theo Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân.</p>
+
+  <h2>1. Nguyên tắc chính</h2>
+  <ul>
+    <li><strong>Mọi việc lọc diễn ra ngay trên máy tính của bạn.</strong> KeepUNet không gửi lịch sử truy cập, danh sách trang bị chặn hay báo cáo về máy chủ của chúng tôi.</li>
+    <li>KeepUNet không chứa quảng cáo, không dùng công cụ phân tích hay theo dõi của bên thứ ba, và chúng tôi không bán dữ liệu.</li>
+  </ul>
+
+  <h2>2. Dữ liệu lưu trên máy tính của bạn</h2>
+  <p>Các dữ liệu sau chỉ nằm trong thư mục <code>C:\ProgramData\KeepUNet</code> và registry của máy. Thư mục này được bảo vệ bằng quyền truy cập của Windows để tài khoản thường không sửa được.</p>
+  <div class="table-wrap"><table>
+    <tr><th>Dữ liệu</th><th>Mục đích</th></tr>
+    <tr><td>Cài đặt: danh sách chặn/cho phép, danh mục, lịch, mật khẩu quản trị và mã khôi phục (lưu dạng băm), mã mở khóa, khóa bí mật cho mã trên điện thoại</td><td>Để bộ lọc hoạt động theo cài đặt của bạn</td></tr>
+    <tr><td>Nhật ký truy cập bị chặn: tên miền, thời điểm, ứng dụng và tài khoản Windows đã thử truy cập</td><td>Hiển thị thông báo và báo cáo cho người quản lý máy</td></tr>
+    <tr><td>Số liệu theo ngày: số lần chặn theo tên miền, danh mục, ứng dụng, tài khoản Windows và giờ; các lần mở khóa và nhập sai mật khẩu</td><td>Trang Tổng quan và Báo cáo</td></tr>
+    <tr><td>Danh sách trang đã truy cập (tên miền gốc và số phút có truy cập) – <strong>mặc định tắt</strong>. Khi người quản lý bật, mọi người dùng máy đều được thông báo</td><td>Báo cáo truy cập cho cha mẹ hoặc nhà trường</td></tr>
+    <tr><td>Nhật ký hoạt động của dịch vụ, cấu hình DNS ban đầu của card mạng</td><td>Khắc phục sự cố; trả lại cấu hình mạng khi gỡ phần mềm</td></tr>
+    <tr><td>Ngày bắt đầu dùng thử, giấy phép hoặc trạng thái mua hàng</td><td>Quản lý thời gian dùng thử và bản quyền</td></tr>
+  </table></div>
+  <p>Báo cáo được giữ theo số ngày bạn chọn (mặc định 30 ngày) rồi tự xóa. Người quản lý máy có thể xem, xuất và xóa các dữ liệu này trong phần mềm. Khi gỡ KeepUNet, bạn có thể chọn xóa toàn bộ dữ liệu; nếu không, thư mục trên được giữ lại để cài lại không mất cài đặt, và bạn có thể tự xóa nó.</p>
+  <p>Cha mẹ, nhà trường hoặc doanh nghiệp cài KeepUNet là người quyết định việc ghi và sử dụng các dữ liệu này trên máy của mình, và nên cho người dùng máy (kể cả trẻ em) biết rằng máy đang được lọc và có thể có báo cáo.</p>
+
+  <h2>3. Truy vấn tên miền (DNS)</h2>
+  <p>Để lọc, KeepUNet nhận các truy vấn tên miền của máy. Truy vấn không bị chặn được chuyển tiếp tới máy chủ DNS mà mạng của bạn đang dùng (thường là của nhà mạng), hoặc tới <strong>Cloudflare for Families</strong> (1.1.1.3) nếu bạn bật tùy chọn này hoặc bật danh mục cần đến nó. Khi không tìm thấy DNS của mạng, KeepUNet dùng DNS công cộng của Cloudflare (1.1.1.1) hoặc Google (8.8.8.8). Các máy chủ DNS này xử lý truy vấn theo chính sách riêng của nhà cung cấp, giống như khi không cài KeepUNet.</p>
+
+  <h2>4. Dữ liệu gửi cho chúng tôi</h2>
+  <p><strong>Mua trong Microsoft Store:</strong> việc thanh toán do Microsoft xử lý. Chúng tôi không nhận thông tin thẻ hay tài khoản thanh toán của bạn. KeepUNet chỉ hỏi Microsoft Store ngay trên máy xem tài khoản đã mua gói nào và còn hạn đến bao giờ; thông tin này không gửi về máy chủ của chúng tôi. Microsoft cung cấp cho nhà phát triển các báo cáo bán hàng tổng hợp theo chính sách của Microsoft.</p>
+  <p><strong>Kích hoạt bằng khóa bản quyền</strong> (khi mua ngoài Store): phần mềm gửi tới máy chủ bản quyền của chúng tôi <em>khóa bản quyền, mã máy</em> (giá trị băm một chiều của mã định danh Windows, không suy ngược được), <em>tên máy tính</em> và <em>phiên bản phần mềm</em>, để cấp và gia hạn giấy phép, giới hạn số máy và giúp bạn nhận biết máy khi chuyển giấy phép. Khi mua, chúng tôi nhận tên, email và thông tin đơn hàng bạn cung cấp để gửi khóa và xuất hóa đơn. Dữ liệu này được giữ trong thời gian giấy phép còn hiệu lực và theo thời hạn lưu chứng từ mà pháp luật kế toán yêu cầu.</p>
+  <p>Ngoài các trường hợp trên, KeepUNet không gửi dữ liệu nào cho chúng tôi.</p>
+
+  <h2>5. Chia sẻ dữ liệu</h2>
+  <p>Chúng tôi không chia sẻ dữ liệu cá nhân cho bên thứ ba, trừ nhà cung cấp hạ tầng lưu trữ máy chủ bản quyền, đơn vị thanh toán và gửi email phục vụ đơn hàng của bạn, hoặc khi cơ quan nhà nước có thẩm quyền yêu cầu theo quy định pháp luật.</p>
+
+  <h2>6. Trẻ em</h2>
+  <p>KeepUNet là công cụ để người lớn bảo vệ trẻ em khi dùng Internet. Chúng tôi không thu thập dữ liệu của trẻ em về máy chủ của mình. Dữ liệu về hoạt động trên máy chỉ nằm trên máy, do cha mẹ hoặc nhà trường quản lý như mô tả ở mục 2.</p>
+
+  <h2>7. Quyền của bạn</h2>
+  <p>Bạn có quyền được biết, truy cập, chỉnh sửa, xóa, hạn chế xử lý và rút lại sự đồng ý đối với dữ liệu cá nhân của mình. Dữ liệu trên máy bạn tự quản lý trực tiếp trong phần mềm. Với dữ liệu kích hoạt hoặc đơn hàng, hãy liên hệ chúng tôi; chúng tôi trả lời trong vòng 72 giờ làm việc.</p>
+
+  <h2>8. Bảo mật</h2>
+  <p>Mật khẩu được lưu dạng băm, dữ liệu trên máy được bảo vệ bằng quyền truy cập của Windows, kết nối tới máy chủ bản quyền dùng HTTPS và giấy phép được ký số. Không có hệ thống nào an toàn tuyệt đối; nếu xảy ra sự cố lộ dữ liệu, chúng tôi sẽ thông báo theo quy định.</p>
+
+  <h2>9. Thay đổi chính sách</h2>
+  <p>Khi chính sách thay đổi, chúng tôi cập nhật trang này và ngày hiệu lực ở đầu trang. Thay đổi quan trọng sẽ được thông báo trong phần mềm.</p>
+
+  <h2>10. Liên hệ</h2>
+  <p>Lê Hùng – nhà phát triển KeepUNet, Việt Nam. Liên hệ qua mục hỗ trợ trên trang KeepUNet trong Microsoft Store.</p>
+</article>
+
+<article id="en" lang="en" style="margin-top:32px">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Applies to the KeepUNet software for Windows. Effective 1 November 2026.</p>
+
+  <p>KeepUNet is an Internet filter for families, schools and small businesses, developed and published by <strong>Lê Hùng</strong> (Vietnam) ("we"). This policy explains what data KeepUNet processes, where, and your rights.</p>
+
+  <h2>1. Key points</h2>
+  <ul>
+    <li><strong>All filtering happens on your PC.</strong> KeepUNet does not send browsing history, blocked sites or reports to our servers.</li>
+    <li>KeepUNet contains no ads and no third-party analytics or tracking, and we do not sell data.</li>
+  </ul>
+
+  <h2>2. Data stored on your PC</h2>
+  <p>The following data stays in <code>C:\ProgramData\KeepUNet</code> and the registry of the PC. The folder is protected with Windows permissions so that standard accounts cannot modify it.</p>
+  <ul>
+    <li>Settings: block/allow lists, categories, schedules, the admin password and recovery code (hashed), unlock codes, and the secret for phone codes.</li>
+    <li>Blocked-access log: domain, time, and the application and Windows account that tried to access it.</li>
+    <li>Daily statistics: block counts by domain, category, application, Windows account and hour; unlock events and failed password attempts.</li>
+    <li>Visited sites (root domain and minutes of activity), <strong>off by default</strong>. When an administrator turns it on, every user of the PC is notified.</li>
+    <li>Service log and the original DNS settings of network adapters (to restore them on uninstall).</li>
+    <li>Trial start date, license or purchase status.</li>
+  </ul>
+  <p>Reports are kept for the number of days you choose (30 by default) and then deleted automatically. The administrator can view, export and delete this data in the app. When uninstalling you can choose to delete all data; otherwise the folder is kept so a reinstall keeps your settings, and you can delete it yourself. The parent, school or business that installs KeepUNet decides whether this data is recorded on its PCs and should tell the users of the PC (including children) that it is filtered and may be reported on.</p>
+
+  <h2>3. DNS queries</h2>
+  <p>To filter, KeepUNet receives the PC's DNS queries. Queries that are not blocked are forwarded to the DNS server your network uses (usually your ISP's), or to <strong>Cloudflare for Families</strong> (1.1.1.3) when you enable that option or a category that relies on it. If no network DNS server is found, KeepUNet uses Cloudflare (1.1.1.1) or Google (8.8.8.8) public DNS. These providers handle queries under their own privacy policies, as they would without KeepUNet.</p>
+
+  <h2>4. Data sent to us</h2>
+  <p><strong>Purchases in the Microsoft Store</strong> are processed by Microsoft. We do not receive your card or payment account details. KeepUNet asks the Microsoft Store on your PC which plan your account owns and when it expires; this is not sent to our servers. Microsoft provides developers with aggregated sales reports under Microsoft's policies.</p>
+  <p><strong>Activation with a license key</strong> (purchases outside the Store): the app sends our license server the <em>license key, a machine ID</em> (a one-way hash of the Windows machine identifier), the <em>computer name</em> and the <em>app version</em>, to issue and renew the license, limit the number of PCs and help you recognize PCs when moving a license. When you buy, we receive the name, email and order details you provide in order to deliver the key and issue an invoice. This data is kept while the license is valid and for the retention period required by accounting law.</p>
+  <p>Other than the cases above, KeepUNet sends no data to us.</p>
+
+  <h2>5. Sharing</h2>
+  <p>We do not share personal data with third parties, except the hosting, payment and email providers that serve your order, or when required by a competent authority under applicable law.</p>
+
+  <h2>6. Children</h2>
+  <p>KeepUNet is a tool for adults to protect children online. We do not collect children's data on our servers. Activity data stays on the PC and is managed by the parent or school as described in section 2.</p>
+
+  <h2>7. Your rights</h2>
+  <p>You may request access to, correction or deletion of your personal data, restrict its processing, or withdraw consent. You manage the data on your PC directly in the app. For activation or order data, contact us; we reply within 72 working hours.</p>
+
+  <h2>8. Security</h2>
+  <p>Passwords are stored hashed, data on the PC is protected with Windows permissions, connections to the license server use HTTPS and licenses are digitally signed. No system is perfectly secure; if a data breach occurs we will give notice as required by law.</p>
+
+  <h2>9. Changes</h2>
+  <p>When this policy changes we update this page and its effective date. Significant changes are announced in the app.</p>
+
+  <h2>10. Contact</h2>
+  <p>Lê Hùng, developer of KeepUNet, Vietnam. Contact us through the support link on the KeepUNet page in the Microsoft Store.</p>
+</article>
+
+</main>
+<footer>© 2026 KeepUNet · <a href="./">Trang chủ</a></footer>
+</body>
+</html>
