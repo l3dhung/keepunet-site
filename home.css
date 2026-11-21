@@ -253,3 +253,4 @@ section { padding: clamp(56px, 8vw, 96px) 0; }
   .contact { min-width: 0; width: 100%; }
   .btn { white-space: normal; text-align: center; }
 }
+.was { display: block; font-size: 17px; font-weight: 600; color: var(--muted); margin-top: 4px; letter-spacing: 0; }
