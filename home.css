@@ -281,3 +281,6 @@ section { padding: clamp(56px, 8vw, 96px) 0; }
 .table-scroll table { min-width: 620px; }
 .article kbd { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 14px; background: var(--soft); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; }
 .updated { color: var(--muted); font-size: 14px; }
+.article .quick { background: var(--soft); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; margin: 8px 0 24px; }
+.article .quick b { display: block; color: var(--brand); font-size: 13px; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 6px; }
+.article .quick p { margin: 0; }

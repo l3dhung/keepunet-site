@@ -1,0 +1,20 @@
+# KeepUNet
+
+> KeepUNet là phần mềm lọc Internet tiếng Việt cho máy tính Windows 10 và 11, dành cho gia đình có con dùng máy tính. Phần mềm chặn web người lớn, cờ bạc, mạng xã hội và game theo giờ; chống vượt rào (cần mật khẩu bố mẹ để tắt hay gỡ, tắt DNS mã hoá của trình duyệt, chặn DNS công cộng, ứng dụng mới phải chờ bố mẹ duyệt); bắt buộc SafeSearch và chế độ hạn chế của YouTube. Mọi việc lọc diễn ra trên máy, không gửi lịch sử truy cập đi đâu.
+
+- Tải miễn phí, dùng đủ tính năng 30 ngày; sau đó 39.000 đ / 31 ngày, 390.000 đ / 1 năm (ưu đãi ra mắt 290.000 đ cho 100 khách đầu tiên đến 31/12/2026) hoặc 490.000 đ mua đứt, giá cho mỗi máy.
+- Mua và kích hoạt: gửi mã máy (trong app: Cài đặt → Bản quyền) qua Zalo 0987 755 325 hoặc email l3dhung@gmail.com, nhận mã kích hoạt.
+- Hết hạn không làm mất mạng: sau 7 ngày ân hạn KeepUNet chỉ ngừng lọc.
+- Chỉ có cho Windows 10, 11; chưa có cho macOS hay điện thoại.
+
+## Trang chính
+
+- [Trang chủ](https://keepunet.vn/): tính năng, bảng giá, hỏi đáp
+- [Hướng dẫn cài đặt](https://keepunet.vn/huong-dan-cai-dat.html): tải, cài, thiết lập lần đầu, kích hoạt, gỡ cài đặt
+- [Cách chặn web đen trên máy tính cho con](https://keepunet.vn/chan-web-den-cho-con.html): so sánh DNS gia đình, Microsoft Family Safety, tiện ích trình duyệt và phần mềm chặn web
+- [Về KeepUNet](https://keepunet.vn/ve-keepunet.html): người phát triển, nguyên tắc, cách làm
+- [Chính sách quyền riêng tư](https://keepunet.vn/privacy.html): tiếng Việt và tiếng Anh
+
+## Tải về
+
+- [KeepUNet-Setup.msi](https://github.com/l3dhung/keepunet-site/releases/latest/download/KeepUNet-Setup.msi): bộ cài Windows, khoảng 900 KB
