@@ -3,13 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KeepUNet – Chặn web đen, quản lý giờ lên mạng cho con trên máy tính Windows</title>
+<title>Phần mềm chặn web đen cho con trên máy tính Windows – KeepUNet</title>
 <meta name="description" content="KeepUNet chặn web người lớn, cờ bạc, mạng xã hội trong giờ học và game quá giờ ngay trên máy tính Windows của con. Con không tự gỡ, không vượt rào được. Tải miễn phí, dùng ngay đủ tính năng.">
 <meta name="theme-color" content="#2a1667">
 <link rel="icon" href="shield.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://keepunet.vn/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="vi_VN">
+<meta property="og:site_name" content="KeepUNet">
 <meta property="og:title" content="KeepUNet – Con lên mạng an toàn, cha mẹ yên tâm">
 <meta property="og:description" content="Chặn web đen, cờ bạc, game và mạng xã hội theo giờ trên máy tính Windows của con. Tải miễn phí, dùng ngay.">
 <meta property="og:url" content="https://keepunet.vn/">
@@ -20,18 +24,143 @@
 <link rel="stylesheet" href="home.css">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "KeepUNet",
-  "operatingSystem": "Windows 10, Windows 11",
-  "applicationCategory": "SecurityApplication",
-  "inLanguage": "vi",
-  "description": "Phần mềm lọc Internet cho gia đình và trường học trên Windows: chặn theo danh mục, lịch dùng mạng, duyệt ứng dụng, chống vượt rào.",
-  "offers": [
-    { "@type": "Offer", "name": "31 ngày", "price": "39000", "priceCurrency": "VND" },
-    { "@type": "Offer", "name": "1 năm", "price": "390000", "priceCurrency": "VND" },
-    { "@type": "Offer", "name": "Mua đứt", "price": "490000", "priceCurrency": "VND" }
-  ]
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://keepunet.vn/#org",
+   "name": "KeepUNet",
+   "url": "https://keepunet.vn/",
+   "logo": "https://keepunet.vn/img/icon-192.png",
+   "email": "l3dhung@gmail.com",
+   "sameAs": [
+    "https://www.facebook.com/1377880948752546"
+   ],
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "telephone": "+84-987-755-325",
+    "email": "l3dhung@gmail.com",
+    "availableLanguage": "vi"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "name": "KeepUNet",
+   "url": "https://keepunet.vn/",
+   "inLanguage": "vi",
+   "publisher": {
+    "@id": "https://keepunet.vn/#org"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "KeepUNet",
+   "url": "https://keepunet.vn/",
+   "operatingSystem": "Windows 10, Windows 11",
+   "applicationCategory": "SecurityApplication",
+   "inLanguage": "vi",
+   "softwareVersion": "3.0.1",
+   "fileSize": "900 KB",
+   "downloadUrl": "https://github.com/l3dhung/keepunet-site/releases/latest/download/KeepUNet-Setup.msi",
+   "image": "https://keepunet.vn/img/og.jpg",
+   "screenshot": "https://keepunet.vn/img/app-tong-quan.webp",
+   "description": "Phần mềm chặn web đen, quản lý giờ lên mạng cho con trên máy tính Windows: chặn theo danh mục, lịch dùng mạng, duyệt ứng dụng, chống vượt rào. Dữ liệu ở lại trên máy.",
+   "publisher": {
+    "@id": "https://keepunet.vn/#org"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "31 ngày",
+     "price": "39000",
+     "priceCurrency": "VND"
+    },
+    {
+     "@type": "Offer",
+     "name": "1 năm (ưu đãi ra mắt)",
+     "price": "290000",
+     "priceCurrency": "VND",
+     "priceValidUntil": "2026-12-31"
+    },
+    {
+     "@type": "Offer",
+     "name": "Mua đứt",
+     "price": "490000",
+     "priceCurrency": "VND"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Con có tự gỡ hay tắt KeepUNet được không?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Không. Mọi thay đổi cài đặt, tắt bảo vệ hay gỡ phần mềm đều cần mật khẩu phụ huynh. Để chắc chắn nhất, hãy cho con dùng tài khoản Windows thường (không phải quản trị) – KeepUNet có sẵn nút tạo tài khoản như vậy."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Con dùng VPN, đổi DNS hay \"DNS bảo mật\" của Chrome thì sao?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "KeepUNet tắt DNS mã hoá trong Chrome, Edge, Firefox, Brave và chặn các máy chủ DNS mã hoá, DNS công cộng phổ biến. Ứng dụng mới cài – kể cả phần mềm VPN – bị chặn dùng mạng trên tài khoản của con cho tới khi bố mẹ đồng ý."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Máy có nhiều tài khoản, nhiều người dùng chung thì sao?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "KeepUNet bảo vệ cả máy, cho mọi tài khoản. Phần duyệt ứng dụng có thể cho phép riêng từng tài khoản, ví dụ bố mẹ dùng Zalo bình thường còn tài khoản của con thì không."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hết hạn thì máy có bị mất mạng không?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Không bao giờ. Hết hạn bạn còn 7 ngày ân hạn; sau đó KeepUNet chỉ ngừng lọc, máy vẫn lên mạng bình thường. Gia hạn bất cứ lúc nào, hạn mới nối tiếp hạn cũ."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Một mã kích hoạt dùng cho mấy máy?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Mỗi mã dành cho một máy tính. Nhà có nhiều máy thì mỗi máy một mã – nhắn Zalo để có giá tốt hơn khi mua nhiều."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Cài lại Windows hay đổi máy thì sao?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Cài lại Windows vẫn dùng lại được mã cũ. Thay bo mạch chủ hoặc chuyển sang máy khác thì nhắn Zalo để được chuyển phần hạn còn lại sang máy mới, miễn phí."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "KeepUNet có xem được con nhắn tin, đọc nội dung gì không?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Không. KeepUNet chỉ biết tên trang web mà máy truy cập (ví dụ tiktok.com), không đọc nội dung trang, tin nhắn hay mật khẩu. Ghi lại các trang đã vào là tuỳ chọn, mặc định tắt, và người dùng máy được thông báo khi bật."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "KeepUNet chạy trên máy nào?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Máy tính Windows 10 và Windows 11. Hiện chưa có bản cho macOS hay điện thoại."
+     }
+    }
+   ]
+  }
+ ]
 }
 </script>
 </head>
@@ -45,6 +174,7 @@
       <a href="#cach-dung">Cách dùng</a>
       <a href="#bang-gia">Bảng giá</a>
       <a href="#hoi-dap">Hỏi đáp</a>
+      <a href="huong-dan-cai-dat.html">Hướng dẫn</a>
     </nav>
     <a class="btn btn-small btn-light" href="https://github.com/l3dhung/keepunet-site/releases/latest/download/KeepUNet-Setup.msi">Tải miễn phí</a>
   </div>
@@ -298,7 +428,7 @@
       <a class="btn btn-primary btn-big" href="https://github.com/l3dhung/keepunet-site/releases/latest/download/KeepUNet-Setup.msi">⬇ Tải miễn phí cho Windows</a>
       <a class="btn btn-ghost" href="https://zalo.me/0987755325" target="_blank" rel="noopener">Cần tư vấn? Nhắn Zalo</a>
     </div>
-    <p class="small">Windows 10 / 11 · Bộ cài .msi · Tiếng Việt</p>
+    <p class="small">Windows 10 / 11 · Bộ cài .msi · Tiếng Việt · <a href="huong-dan-cai-dat.html" style="color:#ffe08a">Hướng dẫn cài đặt</a></p>
   </div>
 </section>
 
@@ -314,7 +444,7 @@
     </div>
     <div>
       <b>Thông tin</b>
-      <p><a href="privacy.html">Chính sách quyền riêng tư</a><br><a href="privacy.html#en">Privacy policy (English)</a></p>
+      <p><a href="huong-dan-cai-dat.html">Hướng dẫn cài đặt</a><br><a href="chan-web-den-cho-con.html">Cách chặn web đen cho con</a><br><a href="privacy.html">Chính sách quyền riêng tư</a><br><a href="privacy.html#en">Privacy policy (English)</a></p>
     </div>
   </div>
   <p class="wrap copy">© 2026 KeepUNet · Phát triển bởi Lê Hùng, Việt Nam</p>
