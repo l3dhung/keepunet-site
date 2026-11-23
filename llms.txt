@@ -15,6 +15,7 @@
 - [Cách hẹn giờ tắt mạng máy tính cho con](https://keepunet.vn/hen-gio-tat-mang-may-tinh.html): modem Wi-Fi, Task Scheduler, Family Safety và lịch dùng mạng của KeepUNet
 - [Về KeepUNet](https://keepunet.vn/ve-keepunet.html): người phát triển, nguyên tắc, cách làm
 - [Chính sách quyền riêng tư](https://keepunet.vn/privacy.html): tiếng Việt và tiếng Anh
+- [Điều khoản sử dụng và mua hàng](https://keepunet.vn/dieu-khoan.html): gói, giá, cách mua, đổi máy, hoàn tiền 14 ngày, khiếu nại, giấy phép bên thứ ba
 
 ## Tải về
 
