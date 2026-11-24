@@ -13,6 +13,7 @@
 - [Hướng dẫn cài đặt](https://keepunet.vn/huong-dan-cai-dat.html): tải, cài, thiết lập lần đầu, kích hoạt, gỡ cài đặt
 - [Cách chặn web đen trên máy tính cho con](https://keepunet.vn/chan-web-den-cho-con.html): so sánh DNS gia đình, Microsoft Family Safety, tiện ích trình duyệt và phần mềm chặn web
 - [Cách hẹn giờ tắt mạng máy tính cho con](https://keepunet.vn/hen-gio-tat-mang-may-tinh.html): modem Wi-Fi, Task Scheduler, Family Safety và lịch dùng mạng của KeepUNet
+- [Cách chặn game trên máy tính cho con](https://keepunet.vn/chan-game-tren-may-tinh.html): modem/hosts, Family Safety, tài khoản Windows thường, danh mục Game và duyệt ứng dụng của KeepUNet
 - [Về KeepUNet](https://keepunet.vn/ve-keepunet.html): người phát triển, nguyên tắc, cách làm
 - [Chính sách quyền riêng tư](https://keepunet.vn/privacy.html): tiếng Việt và tiếng Anh
 - [Điều khoản sử dụng và mua hàng](https://keepunet.vn/dieu-khoan.html): gói, giá, cách mua, đổi máy, hoàn tiền 14 ngày, khiếu nại, giấy phép bên thứ ba
